@@ -76,7 +76,7 @@ def draw_list_pieces(window, list_piece, list_cnv):
         h *= COTE_CASE + LINE_WIDTH
         w *= COTE_CASE + LINE_WIDTH
 
-        cnv = Canvas(window, width=w, height=h, background='light gray')
+        cnv = Canvas(window, width=w, height=h)
 
         cnv.pack()
         cnv.place(x=last_w + count * 20 + TAB_GAP, y=1.5 * TAB_GAP + HEIGHT_TAB)
