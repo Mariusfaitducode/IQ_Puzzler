@@ -2,6 +2,7 @@
 from affichage import *
 from generation import *
 from resolution import *
+import solv as so
 
 
 window = Tk()
@@ -33,5 +34,10 @@ verify_button = Button(window, text="Verifier", font='Helvetica 15 bold',
                          background='light gray', command=(lambda: resolve(grid, list_game_piece, cnv_game, list_cnv, window)))
 
 verify_button.place(x=2 * TAB_GAP + WIDTH_TAB, y= 3 * TAB_GAP)
+
+test_button = Button(window, text="Test", font='Helvetica 15 bold',
+                         background='light gray', command=(lambda: so.isolated(grid)))
+
+test_button.place(x=2 * TAB_GAP + WIDTH_TAB, y= 4 * TAB_GAP)
 
 window.mainloop()
