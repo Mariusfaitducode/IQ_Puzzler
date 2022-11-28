@@ -16,9 +16,9 @@ def isolated(grid): #Forme la liste des groupes de cases vides
 
             emptynearcase(gridtmp,listtmp,i)
 
-        print(listtmp)
+        #print(listtmp)
         listtmp.sort()
-        print(listtmp)
+        #print(listtmp)
 
         list.append(listtmp)
 
