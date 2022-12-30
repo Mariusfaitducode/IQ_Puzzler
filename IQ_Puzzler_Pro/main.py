@@ -1,8 +1,8 @@
 
 from affichage import *
 from generation import *
+from piece import *
 from resolution import *
-
 
 window = Tk()
 window.title("IQ Puzzler Pro")
@@ -29,9 +29,15 @@ generate_button = Button(window, text="Générer", font='Helvetica 15 bold',
 
 generate_button.place(x=2 * TAB_GAP + WIDTH_TAB, y=2 * TAB_GAP)
 
-verify_button = Button(window, text="Verifier", font='Helvetica 15 bold',
+verify_button = Button(window, text="Verifier avec T&G", font='Helvetica 15 bold',
                          background='light gray', command=(lambda: resolve(grid, list_game_piece, cnv_game, list_cnv, window)))
 
 verify_button.place(x=2 * TAB_GAP + WIDTH_TAB, y= 3 * TAB_GAP)
 
-window.mainloop()
+# verify_buttonGenAndTest = Button(window, text="Verifier avec G&T", font='Helvetica 15 bold',
+#                          background='light gray', command=(lambda: generateandtest(grid, list_game_piece, cnv_game, list_cnv, window)))
+
+# verify_buttonGenAndTest.place(x=2 * TAB_GAP + WIDTH_TAB, y= 4 * TAB_GAP)
+
+window.mainloop() 
+#hon tab3 mini size ha ykun (0,0) laan l-l =0 et c-c=0
